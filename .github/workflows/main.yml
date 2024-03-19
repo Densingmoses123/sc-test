@@ -30,9 +30,8 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          PYTHONPATH=./src pytest --cov=src --cov-report=xml tests/
-        env:
-          PYTHONPATH: ${{ github.workspace }}/src
+          cd src
+          PYTHONPATH=./src pytest --cov=./ --cov-report=xml 
 
 
       - name: SonarCloud Scan
