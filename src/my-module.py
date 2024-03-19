@@ -1,4 +1,4 @@
-# my_module.py
+# my_module.py file
 
 def add_numbers(a, b):
     """Adds two numbers together."""
